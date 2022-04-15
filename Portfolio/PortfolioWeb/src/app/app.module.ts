@@ -4,12 +4,14 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { ThemeButtonComponent } from './components/theme-button/theme-button.component';
+import { HomeComponent } from './components/home/home.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     ThemeButtonComponent,
+    HomeComponent,
   ],
   imports: [
     BrowserModule
