@@ -7,6 +7,7 @@ import { ThemeButtonComponent } from './components/theme-button/theme-button.com
 import { HomeComponent } from './components/home/home.component';
 import { EducationComponent } from './components/education/education.component';
 import { ExperienceComponent } from './components/experience/experience.component';
+import { ContactMeComponent } from './components/contact-me/contact-me.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { ExperienceComponent } from './components/experience/experience.componen
     HomeComponent,
     EducationComponent,
     ExperienceComponent,
+    ContactMeComponent,
   ],
   imports: [
     BrowserModule
