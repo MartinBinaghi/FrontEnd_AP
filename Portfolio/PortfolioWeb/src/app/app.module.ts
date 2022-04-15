@@ -9,7 +9,7 @@ import { ThemeButtonComponent } from './components/theme-button/theme-button.com
   declarations: [
     AppComponent,
     HeaderComponent,
-    ThemeButtonComponent
+    ThemeButtonComponent,
   ],
   imports: [
     BrowserModule
