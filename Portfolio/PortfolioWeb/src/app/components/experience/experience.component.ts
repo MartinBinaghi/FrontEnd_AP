@@ -9,6 +9,10 @@ export class ExperienceComponent implements OnInit {
 
   constructor() { }
 
+  experience1:boolean = true;
+  experience2:boolean = false;
+  experience3:boolean = false;
+
   ngOnInit(): void {
   }
 

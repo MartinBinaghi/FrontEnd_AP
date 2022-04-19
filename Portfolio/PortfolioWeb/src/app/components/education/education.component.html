@@ -4,8 +4,8 @@
 
     <div class="education__container container grid">
         <div>
-            <div class="education__content education__open">
-                <div class="education__header">
+            <div class="education__content"[ngClass]="{'education__open':education1==true, 'education__close':education1==false}">
+                <div class="education__header" (click)="education1=!education1">
                     <i class="uil uil-english-to-chinese education__icon"></i>
 
                     <div>
@@ -24,8 +24,8 @@
         </div>
 
         <div>
-            <div class="education__content education__close">
-                <div class="education__header">
+            <div class="education__content"[ngClass]="{'education__open':education2==true, 'education__close':education2==false}">
+                <div class="education__header"(click)="education2=!education2">
                     <i class="uil uil-brackets-curly education__icon"></i>
 
                     <div>
@@ -39,8 +39,8 @@
         </div>
 
         <div>
-            <div class="education__content education__close">
-                <div class="education__header">
+            <div class="education__content"[ngClass]="{'education__open':education3==true, 'education__close':education3==false}">
+                <div class="education__header"(click)="education3=!education3">
                     <i class="uil uil-book-open education__icon"></i>
 
                     <div>
@@ -54,8 +54,8 @@
         </div>
 
         <div>
-            <div class="education__content education__close">
-                <div class="education__header">
+            <div class="education__content"[ngClass]="{'education__open':education4==true, 'education__close':education4==false}">
+                <div class="education__header"(click)="education4=!education4">
                     <i class="uil uil-bell-school education__icon"></i>
                     
                     <div>
