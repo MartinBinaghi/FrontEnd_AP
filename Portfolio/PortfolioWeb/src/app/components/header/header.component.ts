@@ -14,6 +14,8 @@ export class HeaderComponent implements OnInit {
     navLink.forEach(n => n.addEventListener ('click', this.linkAction))
 
     window.addEventListener('scroll', this.scrollActive)
+
+    window.addEventListener('scroll', this.scrollHeader)
   }
 
   menuShow(){
@@ -39,7 +41,7 @@ export class HeaderComponent implements OnInit {
   }
 
   
-linkAction(){
+  linkAction(){
     const navMenu = document.getElementById('nav-menu')!
    // when we click on each nav_link, we remove the show-menu class
     navMenu.classList.remove('show-menu')
@@ -61,4 +63,10 @@ linkAction(){
       }
     })
   }
+
+  scrollHeader(){
+    const nav = document.getElementById('header')!
+    const scrollY = window.pageYOffset
+    if (scrollY >= 80) nav.classList.add('scroll-header'); else nav.classList.remove('scroll-header')
+}
 }
