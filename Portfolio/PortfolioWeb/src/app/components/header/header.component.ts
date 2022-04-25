@@ -68,5 +68,5 @@ export class HeaderComponent implements OnInit {
     const nav = document.getElementById('header')!
     const scrollY = window.pageYOffset
     if (scrollY >= 80) nav.classList.add('scroll-header'); else nav.classList.remove('scroll-header')
-}
+  }
 }
