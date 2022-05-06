@@ -12,4 +12,8 @@ export class AddEducationComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  toggleAddTask(){
+    
+  }
+
 }

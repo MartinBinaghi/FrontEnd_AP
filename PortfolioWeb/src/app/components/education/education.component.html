@@ -2,6 +2,7 @@
     <h2 class="section__title">Educación</h2>
     <span class="section__subtitle">Mi historia educativa</span>
 
+    
     <div class="education__container container grid">
         <div *ngFor = "let education of educations">
             <div class="education__content"[ngClass]="{'education__open':education.education__open==true, 'education__close':education.education__open==false}">
@@ -17,9 +18,12 @@
                 </div>
                 <div class="education__description grid">
                     <p class="education__descriptions">{{education.education__description}}</p>
+                    <i class="uil uil-trash-alt"></i>
                 </div>
+                
             </div>
         </div>
+        <app-add-education></app-add-education>
     </div>
 </section>
 
