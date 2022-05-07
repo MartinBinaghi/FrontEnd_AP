@@ -1,8 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
+import { AddEducationService } from 'src/app/services/add-education.service';
 import {Education} from "../../Education";
-import { EDUCATIONS } from 'src/app/mock-educations';
-
 
 @Component({
   selector: 'app-education',
@@ -11,9 +10,11 @@ import { EDUCATIONS } from 'src/app/mock-educations';
 })
 export class EducationComponent implements OnInit {
 
-  educations: Education[] = EDUCATIONS;
+  educations: Education[] = [];
 
-  constructor() { }
+  constructor(
+    private AddEducationService: AddEducationService,
+  ) {}
 
   /*
   education1:boolean = true;
@@ -23,6 +24,7 @@ export class EducationComponent implements OnInit {
   */
 
   ngOnInit(): void {
+    this.educations = this.AddEducationService.getEducations();
   }
 
 }
