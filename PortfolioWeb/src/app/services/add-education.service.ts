@@ -20,4 +20,9 @@ export class AddEducationService {
   getEducations(): Observable<Education[]> {
     return this.http.get<Education[]>(this.apiUrl)
   }
+
+  deleteEducation(education: Education): Observable<Education> {
+    const url = `${this.apiUrl}/${education.id}`;
+    return this.http.delete<Education>(url);
+  }
 }

@@ -22,5 +22,12 @@ export class EducationComponent implements OnInit {
     ));
   }
 
+  deleteEducation(education: Education){
+    this.AddEducationService.deleteEducation(education)
+      .subscribe(()=>(
+        this.educations = this.educations.filter((t) => t.id !== education.id)
+    ));
+  }
+
 }
 
