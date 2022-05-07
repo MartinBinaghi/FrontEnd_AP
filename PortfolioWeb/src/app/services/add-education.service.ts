@@ -11,10 +11,13 @@ import { EDUCATIONS } from 'src/app/mock-educations';
 })
 export class AddEducationService {
 
-  constructor() { }
+  private apiUrl = 'http://localhost:3000/educations' //Luego voy a tener que modificarla creo para incorporar experiences//
+
+  constructor(
+    private http:HttpClient 
+  ) { }
 
   getEducations(): Observable<Education[]> {
-    const educations = of(EDUCATIONS);
-    return educations;
+    return this.http.get<Education[]>(this.apiUrl)
   }
 }
