@@ -1,5 +1,7 @@
 import { Injectable } from '@angular/core';
 
+import {Observable, of} from 'rxjs';
+
 import {Education} from "../Education";
 import { EDUCATIONS } from 'src/app/mock-educations';
 
@@ -10,7 +12,8 @@ export class AddEducationService {
 
   constructor() { }
 
-  getEducations(): Education[] {
-    return EDUCATIONS;
+  getEducations(): Observable<Education[]> {
+    const educations = of(EDUCATIONS);
+    return educations;
   }
 }
