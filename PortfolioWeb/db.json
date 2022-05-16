@@ -15,14 +15,6 @@
       "education__title": "Desarrollo Web FullStack",
       "education__subtitle": "Argentina Programa",
       "education__description": "2021-2022"
-    },
-    {
-      "id": 3,
-      "education__open": true,
-      "icon": "uil uil-book-open education__icon",
-      "education__title": "Licenciatura en Filosofía",
-      "education__subtitle": "Universidad Nacional de Córdoba",
-      "education__description": "2019-2023"
     }
   ]
 }
