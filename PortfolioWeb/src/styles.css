@@ -168,7 +168,7 @@ img {
   gap: 1.5rem;
 }
 
-.header {
+.nav__component {
   width: 100%;
   position: fixed;
   bottom: 0;
@@ -742,12 +742,12 @@ img {
     margin-bottom: 4rem;
   }
 
-  .header{
+  .nav__component{
     top: 0;
     bottom: initial;
   }
 
-  .header,
+  .nav__component,
   .main,
   .footer__container{
     padding: 0 1rem;
@@ -813,7 +813,7 @@ img {
 
 /*large */
 @media screen and (min-width: 1024px){
-  .header,
+  .nav__component,
   .main,
   .footer__container{
     padding: 0;

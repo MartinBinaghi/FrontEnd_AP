@@ -11,6 +11,7 @@ import { ExperienceComponent } from './components/experience/experience.componen
 import { ContactMeComponent } from './components/contact-me/contact-me.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { AddEducationComponent } from './components/add-education/add-education.component';
+import { NavMenuComponent } from './components/nav-menu/nav-menu.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { AddEducationComponent } from './components/add-education/add-education.
     ContactMeComponent,
     FooterComponent,
     AddEducationComponent,
+    NavMenuComponent,
   ],
   imports: [
     BrowserModule,
