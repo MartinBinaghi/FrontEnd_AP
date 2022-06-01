@@ -20,6 +20,20 @@
 
 .ApLogo{
     display: flex;
-    align-items: left;
+    margin-left: 5%;
+    margin-right: 25%;
     width: 25%;
+}
+
+.Login{
+    margin-right: 1rem;
+    background-color: var(--first-color);
+    color: #FFF;
+    padding: 1rem;
+    border-radius: .5rem;
+    font-weight: var(--normal-font-size);
+    position: relative;
+    margin-left: 25%;
+    margin-right:5%;
+    margin-bottom: 6%;
 }
