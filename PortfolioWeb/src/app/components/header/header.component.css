@@ -28,13 +28,25 @@
 .Login{
     background-color: white;
     color: black;
-    padding: 1rem;
+    padding: 0.5rem 1rem 0.5rem 1rem;
     border-radius: .5rem;
     font-weight: var(--small-font-size);
-    position: relative;
-    left: 25%;
-    right:5%;
-    bottom: 3rem;
+}
+
+.login__button{
+    margin-top:0rem;
+    margin-left:2rem;
+    margin-bottom: 2rem;
+}
+
+.Login:hover{
+    background-color: lightgray;
+}
+
+.login__container{
+    row-gap: 1rem;
+    margin-right: 5rem;
+    margin-top: 0rem;
 }
 
 .header__socials{
@@ -54,11 +66,5 @@
 }
 
 .header__social:hover{
-    color: var(--first-color-lighter);
-}
-
-.login__container{
-    row-gap: 1rem;
-    margin-right: 10rem;
-    margin-top: 5rem;
+    color: lightgray;
 }
