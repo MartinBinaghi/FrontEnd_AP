@@ -12,6 +12,7 @@ import { ContactMeComponent } from './components/contact-me/contact-me.component
 import { FooterComponent } from './components/footer/footer.component';
 import { AddEducationComponent } from './components/add-education/add-education.component';
 import { NavMenuComponent } from './components/nav-menu/nav-menu.component';
+import { AboutMeComponent } from './components/about-me/about-me.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { NavMenuComponent } from './components/nav-menu/nav-menu.component';
     FooterComponent,
     AddEducationComponent,
     NavMenuComponent,
+    AboutMeComponent,
   ],
   imports: [
     BrowserModule,
