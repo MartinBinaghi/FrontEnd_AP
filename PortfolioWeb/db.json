@@ -15,6 +15,14 @@
       "education__title": "Desarrollo Web FullStack",
       "education__subtitle": "Argentina Programa",
       "education__description": "2021-2022"
+    },
+    {
+      "id": 3,
+      "education__open": true,
+      "icon": "uil uil-brackets-curly education__icon",
+      "education__title": "Desarrollo Web FullStack",
+      "education__subtitle": "Argentina Programa",
+      "education__description": "2021-2022"
     }
   ]
 }
