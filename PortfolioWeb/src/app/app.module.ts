@@ -11,6 +11,8 @@ import { FooterComponent } from './components/footer/footer.component';
 import { AddEducationComponent } from './components/add-education/add-education.component';
 import { NavMenuComponent } from './components/nav-menu/nav-menu.component';
 import { AboutMeComponent } from './components/about-me/about-me.component';
+import { NgCircleProgressModule } from 'ng-circle-progress';
+import { HsSkillsComponent } from './components/hs-skills/hs-skills.component';
 
 @NgModule({
   declarations: [
@@ -23,10 +25,12 @@ import { AboutMeComponent } from './components/about-me/about-me.component';
     AddEducationComponent,
     NavMenuComponent,
     AboutMeComponent,
+    HsSkillsComponent,
   ],
   imports: [
     BrowserModule,
-    HttpClientModule
+    HttpClientModule,
+    NgCircleProgressModule.forRoot({})
   ],
   providers: [],
   bootstrap: [AppComponent]
