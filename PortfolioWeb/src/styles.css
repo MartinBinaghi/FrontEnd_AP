@@ -383,65 +383,7 @@ img {
 
 /*==================== EDUCATION ====================*/
 
-.education__container{
-  row-gap: 0;
-}
 
-.education__header{
-  display: flex;
-  align-items: center;
-  margin-bottom: var(--mb-2-5);
-  cursor: pointer;
-}
-
-.education__icon,
-.education__arrow{
-  font-size: 2rem;
-  color: var(--first-color);
-}
-
-.education__icon{
-  margin-right:var(--mb-0-75);
-}
-
-.education__title{
-  font-size: var(--h3-font-size);
-}
-
-.education__subtitle{
-  font-size: var(--small-font-size);
-  color: var(--text-color-light);
-}
-
-.education__arrow{
-  margin-left: auto;
-  transition: .4s;
-}
-
-.education__description{
-  padding-left: var(--mb-2-5);
-  margin-left: var(--mb-0-25);
-}
-
-.education__descriptions{
-  margin-top: -2rem;
-  margin-bottom:1rem;
-  font-size: var(--small-font-size);
-}
-
-.education__close .education__description{
-  height: 0;
-  overflow: hidden;
-}
-
-.education__open .education__description{
-  height: max-content;
-  margin-bottom: var(--mb-2-4)
-}
-
-.education__open .education__arrow{
-  transform: rotate(-180deg);
-}
 
 /*==================== EXPERIENCE ====================*/
 .experience{
