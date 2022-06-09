@@ -1,4 +1,4 @@
-.row{
+/*.row{
     align-items: center;
     text-align: center;
 }
@@ -7,4 +7,19 @@
     width: 30%;
     margin: 0.5rem 0.5rem 0.5rem 0.5rem;
     display: inline-block;
+}*/
+
+.circle__container{
+    display: inline-block;
+    text-align: center;
 }
+
+.row{
+    align-items: center;
+    text-align: center;
+}
+
+.skills__container{
+    row-gap: 0;
+}
+
