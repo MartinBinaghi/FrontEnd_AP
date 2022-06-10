@@ -13,6 +13,7 @@ import { NavMenuComponent } from './components/nav-menu/nav-menu.component';
 import { AboutMeComponent } from './components/about-me/about-me.component';
 import { NgCircleProgressModule } from 'ng-circle-progress';
 import { HsSkillsComponent } from './components/hs-skills/hs-skills.component';
+import { ProjectsComponent } from './components/projects/projects.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { HsSkillsComponent } from './components/hs-skills/hs-skills.component';
     NavMenuComponent,
     AboutMeComponent,
     HsSkillsComponent,
+    ProjectsComponent,
   ],
   imports: [
     BrowserModule,
