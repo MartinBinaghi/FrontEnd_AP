@@ -23,13 +23,21 @@
     color: var(--first-color-alt);
 }
 
-.about-me__blob{
+/*.about-me__blob{
     width: 200px;
     fill: var(--first-color);
+}*/
+
+.about-me__img{
+    display: flex;
+    width: 300px;
 }
 
 .about-me__blob-img{
-    width: 186px;
+    width: 100%;
+    border-radius: 180px;
+    background-color: var(--first-color);
+    padding: 0.5rem;
 }
 
 .about-me__data{
