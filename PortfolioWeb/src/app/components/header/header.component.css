@@ -45,7 +45,6 @@
 .login__button{
     display: flex;
     align-items: center;
-    margin-left:1rem;
 }
 
 .Login:hover{
@@ -54,10 +53,11 @@
 
 .login__container{
     display: flex;
-    align-items: center;
     row-gap: 1rem;
     margin-right: 2rem;
     margin-top: 0rem;
+    flex-direction: column-reverse;
+    align-items: flex-end;
 }
 
 .header__socials{
