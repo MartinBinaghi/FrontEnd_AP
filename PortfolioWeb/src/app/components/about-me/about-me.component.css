@@ -115,6 +115,10 @@
       order: 1;
       justify-self: center;
     }
+
+    .about-me__social-icon{
+        display: none;
+    }
 }
 
 @media screen and (min-width: 768px){
@@ -135,9 +139,6 @@
         display: block;
     }
 
-    .about-me__social{
-        display: none;
-    }
 }
 
 @media screen and (min-width: 1024px){
