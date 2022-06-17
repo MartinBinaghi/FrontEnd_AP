@@ -100,6 +100,17 @@
     .about-me__blob{
         width: 180px;
     }
+
+    .about-me__img{
+        width: 250px;
+    }
+}
+
+@media screen and (max-width:567px){
+
+    .grid {
+        justify-items: center;
+    }
 }
 
 @media screen and (min-width: 568px){
