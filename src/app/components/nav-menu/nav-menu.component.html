@@ -1,0 +1,39 @@
+<div class="nav__component" id="nav__component">
+    <nav class="nav conteiner">
+        <a href="#" class="nav__logo">Martin</a>
+
+        <div class="nav__menu" id="nav-menu">
+            <ul class="nav__list grid">
+                <li class="nav__item">
+                    <a href="#about-me" class="nav__link">
+                        <i class="uil uil-estate nav__icon"></i> Inicio
+                    </a>
+                </li>
+                <li class="nav__item">
+                    <a href="#education" class="nav__link" >
+                        <i class="uil uil-graduation-cap nav__icon"></i> Educación
+                    </a>
+                </li>
+                <li class="nav__item">
+                    <a href="#experience" class="nav__link" >
+                        <i class="uil uil-briefcase nav__icon"></i> Experiencia
+                    </a>
+                </li>
+                <li class="nav__item">
+                    <a href="#contact" class="nav__link" >
+                        <i class="uil uil-message nav__icon"></i> Contacto
+                    </a>
+                </li>
+            </ul>
+            <i class="uil uil-times nav__close" id="nav-close" (click)="menuHidden()"></i>
+        </div>
+        <!--Tema oscuro boton-->
+        <div class="nav__btns">
+            <i class="uil uil-moon change-theme" id="theme-button"></i>
+        
+            <div class="nav__toggle" id="nav-toggle" (click)="menuShow()">
+                <i class="uil uil-apps"></i>
+            </div>
+        </div>
+    </nav>
+</div>

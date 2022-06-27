@@ -1,0 +1,20 @@
+{
+  "educations": [
+    {
+      "id": 1,
+      "education__open": true,
+      "icon": "uil uil-english-to-chinese education__icon",
+      "education__title": "Inglés",
+      "education__subtitle": "Centro Integral de Lenguas",
+      "education__description": "Avanzado, Seniorstalk II: 2014 - 2015"
+    },
+    {
+      "id": 2,
+      "education__open": true,
+      "icon": "uil uil-brackets-curly education__icon",
+      "education__title": "Desarrollo Web FullStack",
+      "education__subtitle": "Argentina Programa",
+      "education__description": "2021-2022"
+    }
+  ]
+}

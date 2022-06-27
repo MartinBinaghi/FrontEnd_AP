@@ -1,0 +1,30 @@
+<section class="education section" id="education">
+    <h2 class="section__title">Educación</h2>
+    <span class="section__subtitle">Mi historia educativa</span>
+
+    
+    <div class="education__container container grid">
+        <div *ngFor = "let education of educations">
+            <div class="education__content"[ngClass]="{'education__open':education.education__open==true, 'education__close':education.education__open==false}">
+                <div class="education__header" (click)="education.education__open=!education.education__open">
+                    <i class={{education.icon}}></i>
+
+                    <div>
+                        <h1 class="education__title">{{education.education__title}}</h1>
+                        <span class="education__subtitle">{{education.education__subtitle}}</span>
+                    </div>
+
+                    <i class="uil uil-angle-down education__arrow"></i>
+                </div>
+                <div class="education__description grid">
+                    <p class="education__descriptions">{{education.education__description}}</p>
+                    <h5>Años</h5>
+                    <i class="uil uil-trash-alt" (click)="deleteEducation(education)"></i>
+                </div>
+                
+            </div>
+        </div>
+        <app-add-education></app-add-education>
+    </div>
+</section>
+

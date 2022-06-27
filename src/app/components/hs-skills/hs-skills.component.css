@@ -1,0 +1,14 @@
+.circle__container{
+    display: inline-block;
+    text-align: center;
+}
+
+.row{
+    align-items: center;
+    text-align: center;
+}
+
+.skills__container{
+    row-gap: 0;
+}
+
