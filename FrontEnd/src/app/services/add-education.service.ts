@@ -1,4 +1,4 @@
-import { Injectable } from '@angular/core';
+/*import { Injectable } from '@angular/core';
 import {HttpClient, HttpHandler} from '@angular/common/http';
 
 import {Observable, of} from 'rxjs';
@@ -25,4 +25,4 @@ export class AddEducationService {
     const url = `${this.apiUrl}/${education.id}`;
     return this.http.delete<Education>(url);
   }
-}
+} */
