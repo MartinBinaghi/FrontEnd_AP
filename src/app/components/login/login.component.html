@@ -2,19 +2,19 @@
     <h2>Login</h2>
     <form #f="ngForm" (ngSubmit)="onLogin()" novalidate>
       <div class="user-box">
-        <input type="text" id="nombreUsuario" [(ngModel)]="nombreUsuario" requiered>
+        <input type="email" id="nombreUsuario" [(ngModel)]="nombreUsuario" name="nombreUsuario" requiered>
         <label for="nombreUsuario">Usuario</label>
       </div>
       <div class="user-box">
         <input type="password" id="password" [(ngModel)]="password" name="password" requiered>
         <label for="password">Password</label>
       </div>
-      <a href="#">
+      <button type= "submit">
         <span></span>
         <span></span>
         <span></span>
         <span></span>
         Submit
-      </a>
+      </button>
     </form>
   </div>
