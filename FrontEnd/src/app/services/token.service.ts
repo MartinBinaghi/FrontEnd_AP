@@ -12,32 +12,32 @@ export class TokenService {
   
   constructor() { }
 
-  public setToken (token: string): void {
+  public setToken(token: string): void {
     window.sessionStorage.removeItem(TOKEN_KEY);
     window.sessionStorage.setItem(TOKEN_KEY, token);
   }
 
-  public getToken (): string {
+  public getToken():string {
     return sessionStorage.getItem(TOKEN_KEY)!;
   }
 
-  public setUsername (username: string): void {
+  public setUserName(userName: string): void {
     window.sessionStorage.removeItem(USERNAME_KEY);
-    window.sessionStorage.setItem(USERNAME_KEY, username);
+    window.sessionStorage.setItem(USERNAME_KEY, userName);
   }
 
-  public getUsername (): string {
+  public getUserName():string {
     return sessionStorage.getItem(USERNAME_KEY)!;
   }
 
-  public setAuthorities (authorities: string[]): void {
+  public setAuthorities(authorities: string[]): void {
     window.sessionStorage.removeItem(AUTHORITIES_KEY);
     window.sessionStorage.setItem(AUTHORITIES_KEY, JSON.stringify(authorities));
   }
 
-  public getAuthorities (): string[] {
+  public getAuthorities(): string[]{
     this.roles = [];
-    if (sessionStorage.getItem(AUTHORITIES_KEY)) {
+    if(sessionStorage.getItem(AUTHORITIES_KEY)){
       JSON.parse(sessionStorage.getItem(AUTHORITIES_KEY)!).forEach((authority:any) => {
         this.roles.push(authority.authority);
       });
@@ -45,7 +45,7 @@ export class TokenService {
     return this.roles;
   }
 
-  public logOut (): void {
+  public logOut(): void{
     window.sessionStorage.clear();
   }
 }
