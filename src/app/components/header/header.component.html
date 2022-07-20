@@ -17,9 +17,14 @@
                         <i class="uil uil-linkedin-alt"></i>
                     </a>
                 </div>
-                <div class="login__button">
+                <div class="login__button" *ngIf="!isLogged">
                     <a href="/login" class="Login">
                         Log In
+                    </a>
+                </div>
+                <div class="login__button" (click)="onLogOut()" *ngIf="isLogged">
+                    <a class="Login">
+                        Log Out
                     </a>
                 </div>
             </div>
