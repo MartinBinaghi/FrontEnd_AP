@@ -17,6 +17,7 @@ import { ProjectsComponent } from './components/projects/projects.component';
 import { EducationModule } from './components/education/education.module';
 import { HomeComponent } from './components/home/home.component';
 import { LoginComponent } from './components/login/login.component';
+import { interceptorProvider } from './services/interceptor-service';
 
 @NgModule({
   declarations: [
@@ -40,7 +41,9 @@ import { LoginComponent } from './components/login/login.component';
     FormsModule,
     NgCircleProgressModule.forRoot({})
   ],
-  providers: [],
+  providers: [
+    interceptorProvider
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
