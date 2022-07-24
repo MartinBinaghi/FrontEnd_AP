@@ -10,6 +10,8 @@ export class NavMenuComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    this.menuHidden()
+    this.menuShow()
     const navLink = document.querySelectorAll('.nav__link')
     navLink.forEach(n => n.addEventListener ('click', this.linkAction))
 
