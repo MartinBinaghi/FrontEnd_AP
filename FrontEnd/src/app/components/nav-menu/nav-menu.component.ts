@@ -24,7 +24,7 @@ export class NavMenuComponent implements OnInit {
 
     if(navToggle){
       navToggle.addEventListener ('click', () =>{
-          navMenu.classList.add('show-menu')
+        navMenu.classList.add('show-menu')
       })
     }
   }
@@ -35,7 +35,7 @@ export class NavMenuComponent implements OnInit {
 
     if(navClose){
       navClose.addEventListener ('click', () =>{
-          navMenu.classList.remove('show-menu')
+        navMenu.classList.remove('show-menu')
       })
     }
   }
