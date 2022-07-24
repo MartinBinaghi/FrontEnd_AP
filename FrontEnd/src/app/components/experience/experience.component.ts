@@ -11,10 +11,6 @@ import { SExperienciaService } from '../../services/s-experiencia.service';
 export class ExperienceComponent implements OnInit {
   expe: Experiencia[] = [];
   
-  experience1:boolean = true;
-  experience2:boolean = false;
-  experience3:boolean = false;
-  
   constructor(private sExperiencia: SExperienciaService, private tokenService: TokenService) { }
   
   isLogged = false;
@@ -27,6 +23,19 @@ export class ExperienceComponent implements OnInit {
       this.isLogged = false;
     }
   }
+
+  onDelete(id?: number){
+    if(id != undefined){
+      this.sExperiencia.delete(id).subscribe(
+        data => {
+          this.cargarExperiencia();
+        }, err => {
+          alert("Error al eliminar experiencia");
+        }
+      );
+    }
+  }
+
   cargarExperiencia():void{
     this.sExperiencia.lista().subscribe(data => {this.expe = data;});
   }

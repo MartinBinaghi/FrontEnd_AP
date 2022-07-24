@@ -3,26 +3,35 @@
     <span class="section__subtitle">Mi historia laboral</span>
 
     <div class="experience__container container grid">
-        <div>
-            <div class="experience__content experience__open"[ngClass]="{'experience__open':experience1==true, 'experience__close':experience1==false}">
-                <div class="experience__header"(click)="experience1=!experience1">
+        <div *ngFor = "let Experiencia of expe">
+            <div class="experience__content experience__open"[ngClass]="{'experience__open':Experiencia.experiencia__open==true, 'experience__close':Experiencia.experiencia__open==false}">
+                <div class="experience__header"(click)="Experiencia.experiencia__open=!Experiencia.experiencia__open">
                     <i class="uil uil-hard-hat experience__icon"></i>
                     <div>
-                        <h1 class="experience__title">Encargado técnico</h1>
-                        <span class="experience__subtitle">Esppro Servicios Industriales</span>
+                        <h1 class="experience__title">{{Experiencia.nombreE}}</h1>
+                        <span class="experience__subtitle">{{Experiencia.subtituloE}}</span>
                     </div>
 
                     <i class="uil uil-angle-down experience__arrow"></i>
                 </div>
                 <div class="experience__description grid">
-                    <p class="experience__descriptions">Avanzado</p>
-                    <p class="experience__descriptions">Seniorstalk I: 2013-2014</p>
-                    <p class="experience__descriptions">Seniorstalk II: 2014-2015</p>
+                    <p class="experience__descriptions">{{Experiencia.descripcionE}}</p>
+                    <div class="description__icons" *ngIf="isLogged">
+                        <button class="btn edit" *ngIf="isLogged" routerLink="/editexp/{{Experiencia.id}}">
+                            <i class="uil uil-edit" ></i>
+                        </button>
+                        <button class="btn delete" *ngIf="isLogged" (click)="onDelete(Experiencia.id)">
+                            <i class="uil uil-trash-alt"></i>
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
+        <button class="btn" routerLink="/newexp" *ngIf="isLogged">
+            <i class="uil uil-plus"></i>
+        </button>
 
-        <div>
+        <!--<div>
             <div class="experience__content"[ngClass]="{'experience__open':experience2==true, 'experience__close':experience2==false}">
                 <div class="experience__header"(click)="experience2=!experience2">
                     <i class="uil uil-brain experience__icon"></i>
@@ -49,6 +58,6 @@
                     <i class="uil uil-angle-down experience__arrow"></i>
                 </div>
             </div>
-        </div>
+        </div>-->
     </div>
 </section>
