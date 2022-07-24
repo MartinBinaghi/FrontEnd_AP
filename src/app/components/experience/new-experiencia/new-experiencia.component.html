@@ -1,0 +1,24 @@
+<div class="login-box">
+    <h2>Añadir Experiencia Laboral</h2>
+    <form #f="ngForm" (ngSubmit)="onCreate()" novalidate>
+      <div class="user-box">
+        <input type="text" id="nombreE" [(ngModel)]="nombreE" name="nombreE" requiered>
+        <label for="nombreE">Cargo</label>
+      </div>
+      <div class="user-box">
+        <input type="text" id="subtituloE" [(ngModel)]="subtituloE" name="subtituloE" requiered>
+        <label for="subtituloE">Empresa</label>
+      </div>
+      <div class="user-box">
+        <input type="text" id="descripcionE" [(ngModel)]="descripcionE" name="descripcionE" requiered>
+        <label for="descripcionE">Descripcion</label>
+      </div>
+      <button type= "submit">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        Añadir
+      </button>
+    </form>
+  </div>
