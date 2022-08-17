@@ -8,7 +8,7 @@ import { AboutMe } from '../model/about-me';
 })
 export class AboutMeService {
 
-  abtURL = 'https://backendap1.herokuapp.com/aboutme/';
+  abtURL = 'https://mipersonalportfolio.herokuapp.com/aboutme/';
 
   constructor(private httpClient: HttpClient) { }
 
