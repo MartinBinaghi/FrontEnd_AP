@@ -33,7 +33,6 @@ export class EditSkillComponent implements OnInit {
 
   onUpdate(): void {
     const id = this.activatedRouter.snapshot.params['id'];
-    console.log(this.habilidad);
     this.sHabilidad.update(id, this.habilidad).subscribe({
       next: (data) => {
         alert('Habilidad actualizada correctamente');
