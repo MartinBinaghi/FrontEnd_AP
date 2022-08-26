@@ -26,13 +26,14 @@ export class HsSkillsComponent implements OnInit {
 
   onDelete(id?: number){
     if(id != undefined){
-      this.sHabilidad.delete(id).subscribe(
-        data => {
+      this.sHabilidad.delete(id).subscribe({
+        next: (data) => {
           this.cargarHabilidad();
-        }, err => {
+        }, 
+        error: (err) => {
           alert("Error al eliminar habilidad");
         }
-      );
+      });
     }
   }
 

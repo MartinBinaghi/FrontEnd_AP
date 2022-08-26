@@ -27,13 +27,14 @@ export class ExperienceComponent implements OnInit {
 
   onDelete(id?: number){
     if(id != undefined){
-      this.sExperiencia.delete(id).subscribe(
-        data => {
+      this.sExperiencia.delete(id).subscribe({
+        next: (data) => {
           this.cargarExperiencia();
-        }, err => {
+        }, 
+        error: (err) => {
           alert("Error al eliminar experiencia");
         }
-      );
+      });
     }
   }
 

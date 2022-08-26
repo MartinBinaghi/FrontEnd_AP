@@ -20,15 +20,15 @@ export class EditSkillComponent implements OnInit {
 
   ngOnInit(): void {
     const id = this.activatedRouter.snapshot.params['id'];
-    this.sHabilidad.detail(id).subscribe(
-      (data) => {
+    this.sHabilidad.detail(id).subscribe({
+      next: (data) => {
         this.habilidad = data;
       },
-      (err) => {
+      error: (err) => {
         alert('Error al editar habilidad');
         this.router.navigate(['']);
       }
-    );
+    });
   }
 
   onUpdate(): void {

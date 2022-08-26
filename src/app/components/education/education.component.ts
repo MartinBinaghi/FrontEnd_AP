@@ -27,13 +27,14 @@ export class EducationComponent implements OnInit {
 
   onDelete(id?: number){
     if(id != undefined){
-      this.sEducacion.delete(id).subscribe(
-        data => {
+      this.sEducacion.delete(id).subscribe({
+        next: (data) => {
           this.cargarEducacion();
-        }, err => {
+        }, 
+        error: (err) => {
           alert("Error al eliminar educacion");
         }
-      );
+      });
     }
   }
 

@@ -20,15 +20,15 @@ export class EditProyectoComponent implements OnInit {
 
   ngOnInit(): void {
     const id = this.activatedRouter.snapshot.params['id'];
-    this.sProyecto.detail(id).subscribe(
-      (data) => {
+    this.sProyecto.detail(id).subscribe({
+      next: (data) => {
         this.proyecto = data;
       },
-      (err) => {
+      error: (err) => {
         alert('Error al editar proyecto');
         this.router.navigate(['']);
       }
-    );
+   });
   }
 
   onUpdate(): void {

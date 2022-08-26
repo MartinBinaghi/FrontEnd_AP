@@ -20,13 +20,16 @@ export class NewSkillComponent implements OnInit {
 
   onCreate(): void {
     const habilidad = new Habilidad(this.porcentajeS, this.tituloS);
-    this.sHabilidad.save(habilidad).subscribe(data => {
+    this.sHabilidad.save(habilidad).subscribe({
+      next: (data) => {
       alert('Habilidad añadida correctamente');
       this.router.navigate(['']);
-    }, err => {
+    }, 
+    error: (err) => {
       alert('Error al añadir habilidad')
       this.router.navigate(['newskill']);
-    });
+    }
+  });
   }
 
 }

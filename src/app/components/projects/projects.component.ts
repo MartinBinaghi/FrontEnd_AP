@@ -27,13 +27,14 @@ export class ProjectsComponent implements OnInit {
 
   onDelete(id?: number){
     if(id != undefined){
-      this.sProyecto.delete(id).subscribe(
-        data => {
+      this.sProyecto.delete(id).subscribe({
+        next: (data) => {
           this.cargarProyecto();
-        }, err => {
+        }, 
+        error: (err) => {
           alert("Error al eliminar proyecto");
         }
-      );
+      });
     }
   }
 

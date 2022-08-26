@@ -23,12 +23,15 @@ export class NewEducacionComponent implements OnInit {
 
   onCreate(): void {
     const educ = new Educacion(this.tituloEd, this.subtituloEd, this.descripcionEd, this.imgEd, this.educacion__open);
-    this.sEducacion.save(educ).subscribe(data => {
+    this.sEducacion.save(educ).subscribe({
+    next: (data) => {
       alert('Educacion añadida correctamente');
       this.router.navigate(['']);
-    }, err => {
+    }, 
+    error: (err) => {
       alert('Error al añadir educacion')
       this.router.navigate(['newedu']);
+    }
     });
   }
 
